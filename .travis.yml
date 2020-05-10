@@ -6,4 +6,4 @@ before_install:
     - docker build -t ananda-raj/study-docker-react -f Dockerfile.dev .
 
 script:
-    - docker run -e CI=true ananda-raj/study-docker-react npn run test -- --coverage
+    - docker run -e CI=true ananda-raj/study-docker-react npm run test -- --coverage
